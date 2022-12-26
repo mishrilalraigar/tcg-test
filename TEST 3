@@ -1,0 +1,37 @@
+import java.util.*;
+class Tst3{
+    public void moviesticket()
+    {
+        int numofticket=0;
+        int age=0;
+        int charge=0;
+        int charge1=0,charge2=0,charge3=0;
+        Scanner  objmov=new Scanner(System.in);
+        System.out.println("Enter Number of ticket");
+        numofticket=objmov.nextInt();
+        System.out.println("Enter Number of ticket if age less then 3");
+        int ticles3 = objmov.nextInt();
+        charge1=0;
+        System.out.println("age is less then3 fees= "+charge1);
+        System.out.println("Enter Number of ticket if age grater then 3 and less then 12");
+        int ticgra3 = objmov.nextInt();
+        charge2= ticgra3*100;
+        System.out.println("Age is grater then 3 and less then 12 fees= "+charge2);
+        System.out.println("Enter Number of ticket if age grater then 12");
+        int ticgra12 = objmov.nextInt();
+        charge3=ticgra12*150;
+        System.out.println("Age is grater then 12 fees= "+charge3);
+        charge=charge1+charge2+charge3;
+
+        System.out.println("--------------------");
+        System.out.println("total number of tickits= "+numofticket+" total charge is= "+charge);
+    }
+
+}
+public class Test3 {
+    public static void main(String[] args) {
+        Tst3 obj = new Tst3();
+        obj.moviesticket();
+
+    }
+}

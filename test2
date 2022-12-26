@@ -1,0 +1,26 @@
+import java.util.*;
+class Tst2{
+    void revmspace()
+    {
+        Scanner objrem = new Scanner(System.in);
+
+        String sc = objrem.nextLine();
+        String r="";
+        Scanner ob1 = new Scanner(sc);
+
+        while(ob1.hasNext()) {
+            r += ob1.next();
+        }
+        System.out.println(r);
+
+    }
+}
+
+
+public class Test2 {
+    public static void main(String[] args) {
+        Tst2 obj = new Tst2();
+        obj.revmspace();
+
+    }
+}
